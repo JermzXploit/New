@@ -1,0 +1,872 @@
+local _0x1a2b = game:GetService("\80\108\97\121\101\114\115").LocalPlayer
+local _0x3c4d = game:GetService("\84\119\101\101\110\83\101\114\118\105\99\101")
+local _0x5e6f = game:GetService("\82\117\110\83\101\114\118\105\99\101")
+local _0x7g8h = game:GetService("\85\115\101\114\73\110\112\117\116\83\101\114\118\105\99\101")
+local _0x9i0j = game:GetService("\72\116\116\112\83\101\114\118\105\99\101")
+
+while not game:IsLoaded() do wait() end
+
+for _, _0xk1l2 in ipairs(_0x1a2b:WaitForChild("\80\108\97\121\101\114\71\117\105"):GetChildren()) do
+    if _0xk1l2.Name == "\84\114\97\99\107\122\119\97\114\101\71\85\73" or _0xk1l2.Name == "\84\114\97\99\107\122\119\97\114\101\76\111\97\100\105\110\103" then
+        _0xk1l2:Destroy()
+    end
+end
+
+local _0xm3n4 = Instance.new("\70\111\108\100\101\114", _0x1a2b.PlayerGui)
+_0xm3n4.Name = "\84\114\97\99\107\122\119\97\114\101\67\111\110\102\105\103\115"
+
+local _0xp5q6 = Instance.new("\83\99\114\101\101\110\71\117\105", _0x1a2b.PlayerGui)
+_0xp5q6.Name = "\84\114\97\99\107\122\119\97\114\101\76\111\97\100\105\110\103"
+_0xp5q6.IgnoreGuiInset = true
+local _0xr7s8 = Instance.new("\70\114\97\109\101", _0xp5q6)
+_0xr7s8.Size = UDim2.new(0, 300, 0, 100)
+_0xr7s8.Position = UDim2.new(0.5, -150, 0.5, -50)
+_0xr7s8.BackgroundColor3 = Color3.new(0.04, 0.04, 0.04)
+local _0xt9u0 = Instance.new("\85\73\83\116\114\111\107\101", _0xr7s8)
+_0xt9u0.Color = Color3.fromRGB(0, 170, 255)
+_0xt9u0.Thickness = 2
+local _0xv1w2 = Instance.new("\84\101\120\116\76\97\98\101\108", _0xr7s8)
+_0xv1w2.Size = UDim2.new(1, 0, 1, 0)
+_0xv1w2.BackgroundTransparency = 1
+_0xv1w2.TextColor3 = Color3.fromRGB(0, 170, 255)
+_0xv1w2.TextScaled = true
+_0xv1w2.Font = Enum.Font.GothamBold
+_0xv1w2.Text = "\84\114\97\99\107\122\119\97\114\101\32\108\111\97\100\105\110\103\46"
+local _0xy3z4 = true
+task.spawn(function()
+    local _0xa5b6 = {".", "..", "..."}
+    while _0xy3z4 and _0xp5q6.Parent do
+        for _, _0xc7d8 in ipairs(_0xa5b6) do
+            _0xv1w2.Text = "\84\114\97\99\107\122\119\97\114\101\32\108\111\97\100\105\110\103" .. _0xc7d8
+            wait(0.4)
+            local _0xe9f0 = math.random(1, 1000) * 0.001
+        end
+    end
+end)
+wait(2.5)
+_0xy3z4 = false
+_0xp5q6:Destroy()
+
+local _0xh1i2 = Instance.new("\83\99\114\101\101\110\71\117\105", _0x1a2b.PlayerGui)
+_0xh1i2.Name = "\84\114\97\99\107\122\119\97\114\101\71\85\73"
+_0xh1i2.IgnoreGuiInset = true
+_0xh1i2.ResetOnSpawn = false
+
+local _0xj3k4 = Instance.new("\83\111\117\110\100", _0xh1i2)
+_0xj3k4.SoundId = "\114\98\120\97\115\115\101\116\105\100\58\47\47\53\52\49\57\48\57\56\54\55\54"
+_0xj3k4.Volume = 0.5
+local function _0xl5m6() _0xj3k4:Play() end
+
+local _0xn7o8 = Instance.new("\73\109\97\103\101\66\117\116\116\111\110", _0xh1i2)
+_0xn7o8.Size = UDim2.new(0, 40, 0, 40)
+_0xn7o8.Position = UDim2.new(0, 5, 0, 240)
+_0xn7o8.Image = "\114\98\120\97\115\115\101\116\105\100\58\47\47\55\55\51\51\57\54\48\57\56\49"
+_0xn7o8.BackgroundColor3 = Color3.fromRGB(0, 170, 255)
+_0xn7o8.BorderSizePixel = 0
+_0xn7o8.Visible = false
+
+local _0xp9q0 = Instance.new("\70\114\97\109\101", _0xh1i2)
+_0xp9q0.Size = UDim2.new(0, 600, 0, 400)
+_0xp9q0.Position = UDim2.new(0.5, -300, 1, 0)
+_0xp9q0.BackgroundColor3 = Color3.fromRGB(15, 15, 15)
+_0xp9q0.Visible = true
+_0xp9q0.Active = true
+_0xp9q0.Draggable = true
+
+local _0xr1s2 = Instance.new("\85\73\83\116\114\111\107\101", _0xp9q0)
+_0xr1s2.Color = Color3.fromRGB(0, 170, 255)
+_0xr1s2.Thickness = 3
+task.spawn(function()
+    while _0xp9q0.Parent do
+        _0x3c4d:Create(_0xr1s2, TweenInfo.new(1), {Transparency = 0.7}):Play()
+        wait(1)
+        _0x3c4d:Create(_0xr1s2, TweenInfo.new(1), {Transparency = 0.3}):Play()
+        wait(1)
+        local _0xt3u4 = math.random()
+    end
+end)
+
+local _0xv5w6 = Instance.new("\84\101\120\116\66\117\116\116\111\110", _0xp9q0)
+_0xv5w6.Size = UDim2.new(0, 30, 0, 30)
+_0xv5w6.Position = UDim2.new(1, -35, 0, 5)
+_0xv5w6.Text = "\88"
+_0xv5w6.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+_0xv5w6.TextColor3 = Color3.fromRGB(255, 0, 0)
+_0xv5w6.Font = Enum.Font.GothamBold
+_0xv5w6.TextSize = 14
+
+local _0xy7z8 = _0xv5w6:Clone()
+_0xy7z8.Parent = _0xp9q0
+_0xy7z8.Position = UDim2.new(1, -70, 0, 5)
+_0xy7z8.Text = "\45"
+
+local _0xa9b0 = Instance.new("\70\114\97\109\101", _0xp9q0)
+_0xa9b0.Size = UDim2.new(0, 120, 1, 0)
+_0xa9b0.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+
+local _0xc1d2 = Instance.new("\70\114\97\109\101", _0xp9q0)
+_0xc1d2.Size = UDim2.new(1, -120, 1, 0)
+_0xc1d2.Position = UDim2.new(0, 120, 0, 0)
+_0xc1d2.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+
+local _0xe3f4 = {"\77\97\105\110", "\86\105\115\117\97\108\115", "\77\105\115\99", "\83\101\116\116\105\110\103\115", "\67\104\97\110\103\101\32\76\111\103"}
+local _0xg5h6 = {}
+for _0xi7j8, _0xk9l0 in ipairs(_0xe3f4) do
+    local _0xm1n2 = Instance.new("\84\101\120\116\66\117\116\116\111\110", _0xa9b0)
+    _0xm1n2.Size = UDim2.new(1, 0, 0, 40)
+    _0xm1n2.Position = UDim2.new(0, 0, 0, (_0xi7j8 - 1) * 40)
+    _0xm1n2.Text = _0xk9l0
+    _0xm1n2.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+    _0xm1n2.TextColor3 = Color3.fromRGB(0, 170, 255)
+    _0xm1n2.Font = Enum.Font.GothamBold
+    _0xm1n2.TextSize = 14
+
+    local _0xp3q4 = Instance.new("\70\114\97\109\101", _0xc1d2)
+    _0xp3q4.Size = UDim2.new(1, 0, 1, 0)
+    _0xp3q4.BackgroundTransparency = 1
+    _0xp3q4.Visible = (_0xi7j8 == 1)
+    _0xg5h6[_0xk9l0] = _0xp3q4
+
+    _0xm1n2.MouseButton1Click:Connect(function()
+        _0xl5m6()
+        for _, _0xr5s6 in pairs(_0xg5h6) do _0xr5s6.Visible = false end
+        _0xp3q4.Visible = true
+    end)
+end
+
+local _0xt7u8 = _0xg5h6["\77\97\105\110"]
+local _0xv9w0 = Instance.new("\84\101\120\116\66\117\116\116\111\110", _0xt7u8)
+_0xv9w0.Size = UDim2.new(0, 200, 0, 40)
+_0xv9w0.Position = UDim2.new(0, 20, 0, 40)
+_0xv9w0.Text = "\71\105\118\101\32\67\97\109\108\111\99\107"
+_0xv9w0.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+_0xv9w0.TextColor3 = Color3.fromRGB(0, 170, 255)
+_0xv9w0.Font = Enum.Font.GothamBold
+_0xv9w0.TextSize = 16
+
+local _0xy1z2 = _0xv9w0:Clone()
+_0xy1z2.Parent = _0xt7u8
+_0xy1z2.Position = UDim2.new(0, 20, 0, 90)
+_0xy1z2.Text = "\70\79\86\32\69\110\97\98\108\101"
+
+local function _0xa3b4(_0xc5d6, _0xe7f8, _0xg9h0, _0xi1j2)
+    local _0xk3l4 = Instance.new("\84\101\120\116\66\111\120", _0xc5d6)
+    _0xk3l4.Size = UDim2.new(0, 200, 0, 35)
+    _0xk3l4.Position = UDim2.new(0, 20, 0, _0xe7f8)
+    _0xk3l4.PlaceholderText = _0xg9h0
+    _0xk3l4.Text = _0xi1j2
+    _0xk3l4.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+    _0xk3l4.TextColor3 = Color3.fromRGB(0, 170, 255)
+    _0xk3l4.Font = Enum.Font.GothamBold
+    _0xk3l4.TextSize = 16
+    _0xk3l4.ClearTextOnFocus = false
+    return _0xk3l4
+end
+
+local _0xm5n6 = _0xa3b4(_0xt7u8, 140, "\70\79\86\32\83\105\122\101\32\40\49\45\53\48\48\41", "150")
+local _0xp7q8 = _0xa3b4(_0xt7u8, 185, "\83\109\111\111\116\104\110\101\115\115\32\40\48\46\48\32\45\32\51\46\48\41", "0.1")
+local _0xr9s0 = _0xa3b4(_0xt7u8, 230, "\80\114\101\100\105\99\116\105\111\110\32\88\32\40\100\101\99\105\109\97\108\41", "0.1")
+local _0xv1w2 = _0xa3b4(_0xt7u8, 275, "\80\114\101\100\105\99\116\105\111\110\32\89\32\40\100\101\99\105\109\97\108\41", "0.1")
+
+local _0xy3z4 = {
+    "\72\101\97\100", "\85\112\112\101\114\84\111\114\115\111", "\76\111\119\101\114\84\111\114\115\111",
+    "\76\101\102\116\72\97\110\100", "\76\101\102\116\76\111\119\101\114\65\114\109", "\76\101\102\116\85\112\112\101\114\65\114\109",
+    "\82\105\103\104\116\72\97\110\100", "\82\105\103\104\116\76\111\119\101\114\65\114\109", "\82\105\103\104\116\85\112\112\101\114\65\114\109",
+    "\76\101\102\116\70\111\111\116", "\76\101\102\116\76\111\119\101\114\76\101\103", "\76\101\102\116\85\112\112\101\114\76\101\103",
+    "\82\105\103\104\116\70\111\111\116", "\82\105\103\104\116\76\111\119\101\114\76\101\103", "\82\105\103\104\116\85\112\112\101\114\76\101\103"
+}
+local _0xa5b6 = "\72\101\97\100"
+
+local _0xc7d8 = Instance.new("\84\101\120\116\66\117\116\116\111\110", _0xt7u8)
+_0xc7d8.Size = UDim2.new(0, 200, 0, 35)
+_0xc7d8.Position = UDim2.new(0, 20, 0, 320)
+_0xc7d8.Text = "\83\101\108\101\99\116\32\72\105\116\32\80\97\114\116\58\32\72\101\97\100"
+_0xc7d8.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+_0xc7d8.TextColor3 = Color3.fromRGB(0, 170, 255)
+_0xc7d8.Font = Enum.Font.GothamBold
+_0xc7d8.TextSize = 16
+
+local _0xe9f0 = Instance.new("\83\99\114\111\108\108\105\110\103\70\114\97\109\101", _0xt7u8)
+_0xe9f0.Size = UDim2.new(0, 200, 0, 150)
+_0xe9f0.Position = UDim2.new(0, 20, 0, 355)
+_0xe9f0.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+_0xe9f0.Visible = false
+_0xe9f0.CanvasSize = UDim2.new(0, 0, 0, #_0xy3z4 * 35)
+_0xe9f0.ScrollBarThickness = 5
+
+local function _0xg1h2(_0xi3j4, _0xk5l6)
+    local _0xm7n8 = Instance.new("\84\101\120\116\66\117\116\116\111\110", _0xe9f0)
+    _0xm7n8.Size = UDim2.new(1, -10, 0, 30)
+    _0xm7n8.Position = UDim2.new(0, 5, 0, (_0xk5l6 - 1) * 35)
+    _0xm7n8.Text = _0xi3j4
+    _0xm7n8.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+    _0xm7n8.TextColor3 = Color3.fromRGB(0, 170, 255)
+    _0xm7n8.Font = Enum.Font.GothamBold
+    _0xm7n8.TextSize = 14
+    _0xm7n8.MouseButton1Click:Connect(function()
+        _0xl5m6()
+        _0xa5b6 = _0xi3j4
+        _0xc7d8.Text = "\83\101\108\101\99\116\32\72\105\116\32\80\97\114\116\58\32" .. _0xi3j4
+        _0xe9f0.Visible = false
+    end)
+end
+
+for _0xp9q0, _0xr1s2 in ipairs(_0xy3z4) do
+    _0xg1h2(_0xr1s2, _0xp9q0)
+end
+
+_0xc7d8.MouseButton1Click:Connect(function()
+    _0xl5m6()
+    _0xe9f0.Visible = not _0xe9f0.Visible
+end)
+
+local _0xt3u4 = _0xg5h6["\86\105\115\117\97\108\115"]
+local _0xv5w6 = _0xv9w0:Clone()
+_0xv5w6.Parent = _0xt3u4
+_0xv5w6.Position = UDim2.new(0, 20, 0, 40)
+_0xv5w6.Text = "\69\83\80\32\69\110\97\98\108\101"
+
+local _0xy7z8 = _0xv9w0:Clone()
+_0xy7z8.Parent = _0xt3u4
+_0xy7z8.Position = UDim2.new(0, 20, 0, 90)
+_0xy7z8.Text = "\226\152\149\32\69\110\97\98\108\101\32\66\111\120\101\115"
+
+local _0xa9b0 = _0xv9w0:Clone()
+_0xa9b0.Parent = _0xt3u4
+_0xa9b0.Position = UDim2.new(0, 20, 0, 140)
+_0xa9b0.Text = "\226\152\149\32\69\110\97\98\108\101\32\84\114\97\99\101\114\115"
+
+local _0xc1d2 = _0xv9w0:Clone()
+_0xc1d2.Parent = _0xt3u4
+_0xc1d2.Position = UDim2.new(0, 20, 0, 190)
+_0xc1d2.Text = "\68\105\115\97\98\108\101\32\65\108\108\32\86\105\115\117\97\108\115"
+
+local _0xe3f4 = _0xg5h6["\77\105\115\99"]
+local _0xg5h6 = _0xv9w0:Clone()
+_0xg5h6.Parent = _0xe3f4
+_0xg5h6.Position = UDim2.new(0, 20, 0, 40)
+_0xg5h6.Text = "\71\105\118\101\32\67\70\114\97\109\101"
+
+local _0xi7j8 = _0xa3b4(_0xe3f4, 90, "\67\70\114\97\109\101\32\77\117\108\116\105\112\108\105\101\114\32\40\49\45\49\48\41", "5")
+
+local _0xk9l0 = _0xg5h6["\83\101\116\116\105\110\103\115"]
+local _0xm1n2 = Instance.new("\83\99\114\111\108\108\105\110\103\70\114\97\109\101", _0xk9l0)
+_0xm1n2.Size = UDim2.new(0, 200, 0, 150)
+_0xm1n2.Position = UDim2.new(0, 20, 0, 40)
+_0xm1n2.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+_0xm1n2.CanvasSize = UDim2.new(0, 0, 0, 0)
+_0xm1n2.ScrollBarThickness = 5
+
+local _0xp3q4 = _0xv9w0:Clone()
+_0xp3q4.Parent = _0xk9l0
+_0xp3q4.Position = UDim2.new(0, 20, 0, 200)
+_0xp3q4.Text = "\83\97\118\101\32\67\111\110\102\105\103"
+
+local _0xr5s6 = _0xv9w0:Clone()
+_0xr5s6.Parent = _0xk9l0
+_0xr5s6.Position = UDim2.new(0, 20, 0, 245)
+_0xr5s6.Text = "\76\111\97\100\32\83\101\108\101\99\116\101\100\32\67\111\110\102\105\103"
+
+local _0xt7u8 = _0xa3b4(_0xk9l0, 290, "\67\111\110\102\105\103\32\78\97\109\101", "")
+local _0xv9w0 = nil
+local _0xy1z2 = nil
+local _0xa3b4 = nil
+local _0xc5d6 = false
+local _0xe7f8 = false
+local _0xg9h0 = false
+local _0xi1j2 = false
+local _0xk3l4 = false
+local _0xm5n6 = 150
+local _0xp7q8 = 0.1
+local _0xr9s0 = 0.1
+local _0xv1w2 = 0.1
+local _0xy3z4 = {}
+local _0xa5b6 = {}
+local _0xc7d8 = {}
+local _0xe9f0 = 5
+
+local _0xg1h2 = Drawing.new("\67\105\114\99\108\101")
+_0xg1h2.Color = Color3.fromRGB(0, 170, 255)
+_0xg1h2.Thickness = 2
+_0xg1h2.Filled = false
+_0xg1h2.Visible = false
+
+local function _0xi3j4()
+    local _0xk5l6 = _0xm3n4:GetChildren()
+    _0xm1n2.CanvasSize = UDim2.new(0, 0, 0, #_0xk5l6 * 35)
+    for _0xm7n8, _0xp9q0 in ipairs(_0xk5l6) do
+        local _0xr1s2 = Instance.new("\84\101\120\116\66\117\116\116\111\110", _0xm1n2)
+        _0xr1s2.Size = UDim2.new(1, -10, 0, 30)
+        _0xr1s2.Position = UDim2.new(0, 5, 0, (_0xm7n8 - 1) * 35)
+        _0xr1s2.Text = _0xp9q0.Name
+        _0xr1s2.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+        _0xr1s2.TextColor3 = Color3.fromRGB(0, 170, 255)
+        _0xr1s2.Font = Enum.Font.GothamBold
+        _0xr1s2.TextSize = 14
+        _0xr1s2.MouseButton1Click:Connect(function()
+            _0xl5m6()
+            _0xv9w0 = _0xp9q0
+        end)
+    end
+end
+
+local function _0xt3u4()
+    local _0xv5w6 = _0xm5n6
+    if _0xv9w0 == "" then _0xv9w0 = "\67\111\110\102\105\103\95" .. os.time() end
+    local _0xy7z0 = {
+        fovRadius = _0xm5n6, smoothness = _0xp7q8, predX = _0xr9s0, predY = _0xv1w2,
+        cframeSpeed = _0xe9f0, selectedHitPart = _0xa5b6, camlockActive = _0xc5d6,
+        fovEnabled = _0xe7f8, espEnabled = _0xg9h0, boxesEnabled = _0xi1j2,
+        tracersEnabled = _0xk3l4, cframeEnabled = _0xy1z2
+    }
+    local _0xa9b0 = _0x9i0j:JSONEncode(_0xy7z0)
+    local _0xc1d2 = Instance.new("\83\116\114\105\110\103\86\97\108\117\101", _0xm3n4)
+    _0xc1d2.Name = _0xv9w0
+    _0xc1d2.Value = _0xa9b0
+end
+
+local function _0xe3f4(_0xg5h6)
+    if _0xg5h6 and _0xg5h6:IsA("\83\116\114\105\110\103\86\97\108\117\101") then
+        local _0xi7j8, _0xk9l0 = pcall(function()
+            return _0x9i0j:JSONDecode(_0xg5h6.Value)
+        end)
+        if _0xi7j8 then
+            _0xm5n6 = _0xk9l0.fovRadius or _0xm5n6
+            _0xp7q8 = _0xk9l0.smoothness or _0xp7q8
+            _0xr9s0 = _0xk9l0.predX or _0xr9s0
+            _0xv1w2 = _0xk9l0.predY or _0xv1w2
+            _0xe9f0 = _0xk9l0.cframeSpeed or _0xe9f0
+            _0xa5b6 = _0xk9l0.selectedHitPart or _0xa5b6
+            _0xc5d6 = _0xk9l0.camlockActive or _0xc5d6
+            _0xe7f8 = _0xk9l0.fovEnabled or _0xe7f8
+            _0xg9h0 = _0xk9l0.espEnabled or _0xg9h0
+            _0xi1j2 = _0xk9l0.boxesEnabled or _0xi1j2
+            _0xk3l4 = _0xk9l0.tracersEnabled or _0xk3l4
+            _0xy1z2 = _0xk9l0.cframeEnabled or _0xy1z2
+
+            _0xm5n6.Text = tostring(_0xm5n6)
+            _0xp7q8.Text = tostring(_0xp7q8)
+            _0xr9s0.Text = tostring(_0xr9s0)
+            _0xv1w2.Text = tostring(_0xv1w2)
+            _0xi7j8.Text = tostring(_0xe9f0)
+            _0xc7d8.Text = "\83\101\108\101\99\116\32\72\105\116\32\80\97\114\116\58\32" .. _0xa5b6
+            _0xy1z2.Text = _0xe7f8 and "\70\79\86\32\68\105\115\97\98\108\101" or "\70\79\86\32\69\110\97\98\108\101"
+            _0xv5w6.Text = _0xg9h0 and "\69\83\80\32\68\105\115\97\98\108\101" or "\69\83\80\32\69\110\97\98\108\101"
+            _0xy7z8.Text = _0xi1j2 and "\226\152\145\32\69\110\97\98\108\101\32\66\111\120\101\115" or "\226\152\149\32\69\110\97\98\108\101\32\66\111\120\101\115"
+            _0xa9b0.Text = _0xk3l4 and "\226\152\145\32\69\110\97\98\108\101\32\84\114\97\99\101\114\115" or "\226\152\149\32\69\110\97\98\108\101\32\84\114\97\99\101\114\115"
+            if _0xc1d2 then
+                _0xc1d2.Text = _0xy1z2 and "\67\70\114\97\109\101\32\68\105\115\97\98\108\101" or "\67\70\114\97\109\101\32\69\110\97\98\108\101"
+            end
+            if _0xe3f4 then
+                _0xe3f4.Text = _0xc5d6 and "\240\159\148\146" or "\240\159\142\175"
+            end
+        end
+    end
+end
+
+_0xm3n4.ChildAdded:Connect(_0xi3j4)
+_0xm3n4.ChildRemoved:Connect(_0xi3j4)
+_0xp3q4.MouseButton1Click:Connect(function()
+    _0xl5m6()
+    _0xt3u4()
+    _0xi3j4()
+end)
+_0xr5s6.MouseButton1Click:Connect(function()
+    _0xl5m6()
+    if _0xv9w0 then
+        _0xe3f4(_0xv9w0)
+    end
+end)
+
+local function _0xg5h6()
+    local _0xi7j8 = workspace.CurrentCamera
+    local _0xk9l0 = Vector2.new(_0xi7j8.ViewportSize.X / 2, _0xi7j8.ViewportSize.Y / 2)
+    local _0xm1n2, _0xp3q4 = nil, 99999
+    for _, _0xr5s6 in ipairs(game.Players:GetPlayers()) do
+        if _0xr5s6 ~= _0x1a2b and _0xr5s6.Character and _0xr5s6.Character:FindFirstChild(_0xa5b6) then
+            local _0xt7u8 = _0xr5s6.Character[_0xa5b6]
+            local _0xv9w0, _0xy1z2 = _0xi7j8:WorldToViewportPoint(_0xt7u8.Position)
+            if _0xy1z2 then
+                local _0xa3b4 = (Vector2.new(_0xv9w0.X, _0xv9w0.Y) - _0xk9l0).Magnitude
+                if _0xa3b4 <= _0xm5n6 and _0xa3b4 < _0xp3q4 then
+                    _0xm1n2 = _0xr5s6
+                    _0xp3q4 = _0xa3b4
+                end
+            end
+        end
+    end
+    return _0xm1n2
+end
+
+local function _0xc5d6()
+    if _0xe3f4 then return end
+    _0xe3f4 = Instance.new("\84\101\120\116\66\117\116\116\111\110", _0xh1i2)
+    _0xe3f4.Size = UDim2.new(0, 50, 0, 50)
+    _0xe3f4.Position = UDim2.new(0.5, -25, 0.6, 0)
+    _0xe3f4.Text = "\240\159\142\175"
+    _0xe3f4.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+    _0xe3f4.TextColor3 = Color3.fromRGB(0, 170, 255)
+    _0xe3f4.Font = Enum.Font.GothamBold
+    _0xe3f4.TextSize = 20
+    _0xe3f4.Draggable = true
+    _0xe3f4.Active = true
+    _0xe3f4.MouseButton1Click:Connect(function()
+        if _0xc5d6 then
+            _0xc5d6 = false
+            _0xa3b4 = nil
+            _0xe3f4.Text = "\240\159\142\175"
+        else
+            local _0xk9l0 = _0xg5h6()
+            if _0xk9l0 then
+                _0xc5d6 = true
+                _0xa3b4 = _0xk9l0
+                _0xe3f4.Text = "\240\159\148\146"
+            end
+        end
+    end)
+end
+
+local function _0xm1n2()
+    if _0xc1d2 then return end
+    _0xc1d2 = Instance.new("\84\101\120\116\66\117\116\116\x111\x110", _0xh1i2)
+    _0xc1d2.Size = UDim2.new(0, 100, 0, 50)
+    _0xc1d2.Position = UDim2.new(0.5, -50, 0.7, 0)
+    _0xc1d2.Text = "\67\70\114\97\109\101\32\69\110\97\98\108\101"
+    _0xc1d2.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+    _0xc1d2.TextColor3 = Color3.fromRGB(0, 170, 255)
+    _0xc1d2.Font = Enum.Font.GothamBold
+    _0xc1d2.TextSize = 20
+    _0xc1d2.Draggable = true
+    _0xc1d2.Active = true
+    _0xc1d2.MouseButton1Click:Connect(function()
+        _0xl5m6()
+        _0xy1z2 = not _0xy1z2
+        _0xc1d2.Text = _0xy1z2 and "\67\70\114\97\109\101\32\68\105\115\x97\x98\x108\x101" or "\67\70\114\97\109\101\32\69\110\x97\x98\x108\x101"
+    end)
+end
+
+_0xi7j8.FocusLost:Connect(function(_0xp3q4)
+    if _0xp3q4 then
+        local _0xr5s6 = tonumber(_0xi7j8.Text)
+        if _0xr5s6 and _0xr5s6 >= 1 and _0xr5s6 <= 10 then
+            _0xe9f0 = _0xr5s6
+        else
+            _0xi7j8.Text = "5"
+            _0xe9f0 = 5
+        end
+    end
+end)
+
+local function _0xt7u8(_0xv9w0)
+    if _0xv9w0 ~= _0x1a2b and _0xv9w0.Character then
+        local _0xy1z2 = _0xy3z4[_0xv9w0] or Instance.new("\72\105\103\104\108\105\103\104\116")
+        _0xy1z2.Name = "\84\114\97\99\107\122\119\97\114\101\69\83\80"
+        _0xy1z2.FillColor = Color3.fromRGB(0, 170, 255)
+        _0xy1z2.OutlineColor = Color3.fromRGB(0, 170, 255)
+        _0xy1z2.OutlineTransparency = 0
+        _0xy1z2.FillTransparency = 1
+        _0xy1z2.Adornee = _0xv9w0.Character
+        _0xy1z2.Parent = _0xv9w0.Character
+        _0xy3z4[_0xv9w0] = _0xy1z2
+    end
+end
+
+local function _0xa3b4(_0xc5d6)
+    if _0xy3z4[_0xc5d6] then
+        _0xy3z4[_0xc5d6]:Destroy()
+        _0xy3z4[_0xc5d6] = nil
+    end
+end
+
+local function _0xe7f8()
+    if not _0xg9h0 then
+        for _0xi7j8, _ in pairs(_0xy3z4) do
+            _0xa3b4(_0xi7j8)
+        end
+        return
+    end
+    local _0xk9l0 = workspace.CurrentCamera
+    for _, _0xm1n2 in ipairs(game.Players:GetPlayers()) do
+        if _0xm1n2 ~= _0x1a2b and _0xm1n2.Character then
+            local _0xp3q4 = _0xm1n2.Character:FindFirstChild("\72\117\109\97\110\111\105\100\82\111\111\116\80\97\114\116")
+            if _0xp3q4 then
+                local _, _0xr5s6 = _0xk9l0:WorldToViewportPoint(_0xp3q4.Position)
+                if _0xr5s6 then
+                    _0xt7u8(_0xm1n2)
+                else
+                    _0xa3b4(_0xm1n2)
+                end
+            end
+        end
+    end
+end
+
+local function _0xv9w0(_0xy1z2)
+    if _0xy1z2 ~= _0x1a2b and _0xy1z2.Character then
+        local _0xa3b4 = _0xy1z2.Character:FindFirstChild("\72\117\109\97\110\111\105\100\82\111\111\116\80\x97\x114\x116")
+        if _0xa3b4 then
+            local _0xc5d6 = _0xa5b6[_0xy1z2] or Instance.new("\66\111\120\72\97\110\100\108\101\65\100\111\114\110\109\101\110\116")
+            _0xc5d6.Name = "\84\114\97\99\107\122\119\97\114\101\66\111\120"
+            _0xc5d6.Size = _0xy1z2.Character:GetExtentsSize() * 1.1
+            _0xc5d6.Adornee = _0xy1z2.Character
+            _0xc5d6.Color3 = Color3.fromRGB(0, 170, 255)
+            _0xc5d6.Transparency = 0.5
+            _0xc5d6.AlwaysOnTop = true
+            _0xc5d6.ZIndex = 10
+            _0xc5d6.Parent = _0xy1z2.Character
+            _0xa5b6[_0xy1z2] = _0xc5d6
+        end
+    end
+end
+
+local function _0xe7f8(_0xg9h0)
+    if _0xa5b6[_0xg9h0] then
+        _0xa5b6[_0xg9h0]:Destroy()
+        _0xa5b6[_0xg9h0] = nil
+    end
+end
+
+local function _0xi1j2()
+    if not _0xi1j2 then
+        for _0xk3l4, _ in pairs(_0xa5b6) do
+            _0xe7f8(_0xk3l4)
+        end
+        return
+    end
+    local _0xm5n6 = workspace.CurrentCamera
+    for _, _0xp7q8 in ipairs(game.Players:GetPlayers()) do
+        if _0xp7q8 ~= _0x1a2b and _0xp7q8.Character then
+            local _0xr9s0 = _0xp7q8.Character:FindFirstChild("\72\117\109\97\110\111\105\100\82\111\111\116\80\x97\x114\x116")
+            if _0xr9s0 then
+                local _, _0xv1w2 = _0xm5n6:WorldToViewportPoint(_0xr9s0.Position)
+                if _0xv1w2 then
+                    _0xv9w0(_0xp7q8)
+                else
+                    _0xe7f8(_0xp7q8)
+                end
+            end
+        end
+    end
+end
+
+local function _0xy3z4(_0xa5b6)
+    if _0xa5b6 ~= _0x1a2b and _0xa5b6.Character and _0x1a2b.Character then
+        local _0xc7d8 = _0xa5b6.Character:FindFirstChild("\72\117\109\97\110\111\105\100\82\111\111\116\80\x97\x114\x116")
+        local _0xe9f0 = _0x1a2b.Character:FindFirstChild("\72\117\109\97\110\111\105\100\82\111\111\116\80\x97\x114\x116")
+        if _0xc7d8 and _0xe9f0 then
+            local _0xg1h2 = _0xc7d8[_0xa5b6] or {}
+            local _0xi3j4 = _0xg1h2.beam or Instance.new("\66\x101\x97\x109")
+            _0xi3j4.Name = "\84\114\97\99\107\122\119\97\114\101\84\114\97\99\101\114"
+            _0xi3j4.Color = ColorSequence.new(Color3.fromRGB(0, 170, 255))
+            _0xi3j4.Transparency = NumberSequence.new(0.2)
+            _0xi3j4.Width0 = 0.2
+            _0xi3j4.Width1 = 0.2
+            _0xi3j4.LightEmission = 1
+            _0xi3j4.LightInfluence = 0
+
+            local _0xk5l6 = _0xg1h2.attachment0 or Instance.new("\65\x116\x116\x97\x99\x104\x109\x101\x110\x116")
+            _0xk5l6.Position = Vector3.new(0, 0, 0)
+            _0xk5l6.Parent = _0xe9f0
+            local _0xm7n8 = _0xg1h2.attachment1 or Instance.new("\65\x116\x116\x97\x99\x104\x109\x101\x110\x116")
+            _0xm7n8.Position = Vector3.new(0, 0, 0)
+            _0xm7n8.Parent = _0xc7d8
+
+            _0xi3j4.Attachment0 = _0xk5l6
+            _0xi3j4.Attachment1 = _0xm7n8
+            _0xi3j4.Parent = workspace.CurrentCamera
+            _0xc7d8[_0xa5b6] = {beam = _0xi3j4, attachment0 = _0xk5l6, attachment1 = _0xm7n8}
+        end
+    end
+end
+
+local function _0xp9q0(_0xr1s2)
+    if _0xc7d8[_0xr1s2] then
+        if _0xc7d8[_0xr1s2].beam then _0xc7d8[_0xr1s2].beam:Destroy() end
+        if _0xc7d8[_0xr1s2].attachment0 then _0xc7d8[_0xr1s2].attachment0:Destroy() end
+        if _0xc7d8[_0xr1s2].attachment1 then _0xc7d8[_0xr1s2].attachment1:Destroy() end
+        _0xc7d8[_0xr1s2] = nil
+    end
+end
+
+local function _0xt3u4()
+    if not _0xk3l4 or not _0x1a2b.Character or not _0x1a2b.Character:FindFirstChild("\72\117\109\97\110\111\105\100\82\111\111\116\80\x97\x114\x116") then
+        for _0xv5w6, _ in pairs(_0xc7d8) do
+            _0xp9q0(_0xv5w6)
+        end
+        return
+    end
+    local _0xy7z8 = workspace.CurrentCamera
+    for _, _0xa9b0 in ipairs(game.Players:GetPlayers()) do
+        if _0xa9b0 ~= _0x1a2b and _0xa9b0.Character and _0xa9b0.Character:FindFirstChild("\72\117\109\97\110\111\105\100\82\111\111\116\80\x97\x114\x116") then
+            local _0xc1d2 = _0xa9b0.Character.HumanoidRootPart
+            local _, _0xe3f4 = _0xy7z8:WorldToViewportPoint(_0xc1d2.Position)
+            if _0xe3f4 then
+                _0xy3z4(_0xa9b0)
+            else
+                _0xp9q0(_0xa9b0)
+            end
+        end
+    end
+end
+
+task.spawn(function()
+    while true do
+        if _0xg9h0 or _0xi1j2 or _0xk3l4 then
+            _0xe7f8()
+            _0xi1j2()
+            _0xt3u4()
+        end
+        wait(0.1)
+    end
+end)
+
+game.Players.PlayerAdded:Connect(function(_0xg5h6)
+    if _0xg9h0 then
+        _0xg5h6.CharacterAdded:Connect(function()
+            _0xt7u8(_0xg5h6)
+        end)
+    end
+    if _0xi1j2 then
+        _0xg5h6.CharacterAdded:Connect(function()
+            _0xv9w0(_0xg5h6)
+        end)
+    end
+    if _0xk3l4 then
+        _0xg5h6.CharacterAdded:Connect(function()
+            _0xy3z4(_0xg5h6)
+        end)
+    end
+end)
+
+game.Players.PlayerRemoving:Connect(function(_0xi7j8)
+    _0xa3b4(_0xi7j8)
+    _0xe7f8(_0xi7j8)
+    _0xp9q0(_0xi7j8)
+end)
+
+_0x1a2b.CharacterAdded:Connect(function()
+    if _0xg9h0 then _0xe7f8() end
+    if _0xi1j2 then _0xi1j2() end
+    if _0xk3l4 then _0xt3u4() end
+end)
+
+local function _0xk9l0()
+    local _0xm1n2 = _0x1a2b.Character and _0x1a2b.Character:FindFirstChild("\72\117\109\97\110\111\105\100")
+    local _0xp3q4 = workspace.CurrentCamera
+    if _0xm1n2 and _0xp3q4 then
+        local _0xr5s6 = _0xm1n2.MoveDirection
+        if _0xr5s6.Magnitude > 0 then
+            local _0xt7u8 = _0xp3q4.CFrame.LookVector
+            local _0xv9w0 = _0xp3q4.CFrame.RightVector
+            local _0xy1z2 = (_0xt7u8 * -_0xr5s6.Z + _0xv9w0 * _0xr5s6.X)
+            _0xy1z2 = Vector3.new(_0xy1z2.X, 0, _0xy1z2.Z).Unit * _0xr5s6.Magnitude
+            return _0xy1z2
+        end
+    end
+    return Vector3.new(0, 0, 0)
+end
+
+_0x5e6f.RenderStepped:Connect(function(_0xa3b4)
+    local _0xc5d6 = workspace.CurrentCamera
+    _0xm5n6 = math.clamp(tonumber(_0xm5n6.Text) or _0xm5n6, 1, 500)
+    _0xp7q8 = math.clamp(tonumber(_0xp7q8.Text) or _0xp7q8, 0, 3)
+    _0xr9s0 = tonumber(_0xr9s0.Text) or _0xr9s0
+    _0xv1w2 = tonumber(_0xv1w2.Text) or _0xv1w2
+
+    if _0xe7f8 then
+        local _0xe9f0 = _0xc5d6.ViewportSize
+        _0xg1h2.Visible = true
+        _0xg1h2.Position = Vector2.new(_0xe9f0.X / 2, _0xe9f0.Y / 2)
+        _0xg1h2.Radius = _0xm5n6
+    else
+        _0xg1h2.Visible = false
+    end
+
+    if _0xc5d6 and _0xa3b4 and _0xa3b4.Character and _0xa3b4.Character:FindFirstChild(_0xa5b6) then
+        local _0xg1h2 = _0xa3b4.Character[_0xa5b6]
+        local _0xi3j4 = _0xa3b4.Character:FindFirstChild("\72\117\109\97\110\111\105\100\82\111\111\116\80\x97\x114\x116")
+        if _0xg1h2 and _0xi3j4 then
+            local _0xk5l6 = _0xg1h2.Position + (_0xi3j4.Velocity * Vector3.new(_0xr9s0, _0xv1w2, 0))
+            _0xc5d6.CFrame = CFrame.new(_0xc5d6.CFrame.Position, _0xk5l6)
+        end
+    end
+
+    if _0xy1z2 and _0x1a2b.Character and _0x1a2b.Character:FindFirstChild("\72\117\109\97\110\111\105\100\82\111\111\116\80\x97\x114\x116") then
+        local _0xm7n8 = _0x1a2b.Character.HumanoidRootPart
+        local _0xp9q0 = _0x1a2b.Character:FindFirstChild("\72\117\109\97\110\111\105\100")
+        local _0xr1s2 = _0xk9l0()
+        if _0xr1s2.Magnitude > 0 then
+            local _0xt3u4 = _0xr1s2 * _0xe9f0 * 100 * _0xa3b4
+            local _0xv5w6, _0xy7z8 = pcall(function()
+                _0xm7n8.CFrame = _0xm7n8.CFrame + _0xt3u4
+            end)
+            if not _0xv5w6 then
+                if _0xp9q0 then
+                    _0xp9q0.WalkSpeed = 16 * _0xe9f0
+                end
+            else
+                if _0xp9q0 then
+                    _0xp9q0.WalkSpeed = 16
+                end
+            end
+        else
+            if _0xp9q0 then
+                _0xp9q0.WalkSpeed = 16
+            end
+        end
+    elseif _0x1a2b.Character and _0x1a2b.Character:FindFirstChild("\72\117\109\97\110\111\105\100") then
+        _0x1a2b.Character.Humanoid.WalkSpeed = 16
+    end
+end)
+
+_0xv9w0.MouseButton1Click:Connect(function()
+    _0xl5m6()
+    _0xc5d6()
+end)
+
+_0xy1z2.MouseButton1Click:Connect(function()
+    _0xl5m6()
+    _0xe7f8 = not _0xe7f8
+    _0xv5w6.Text = _0xe7f8 and "\70\79\86\32\68\105\115\x97\x98\x108\x101" or "\70\79\86\32\69\110\x97\x98\x108\x101"
+end)
+
+_0xv5w6.MouseButton1Click:Connect(function()
+    _0xl5m6()
+    _0xg9h0 = not _0xg9h0
+    _0xv5w6.Text = _0xg9h0 and "\69\83\80\32\68\105\115\x97\x98\x108\x101" or "\69\83\80\32\69\110\x97\x98\x108\x101"
+    _0xe7f8()
+end)
+
+_0xy7z8.MouseButton1Click:Connect(function()
+    _0xl5m6()
+    _0xi1j2 = not _0xi1j2
+    _0xy7z8.Text = _0xi1j2 and "\226\152\145\32\69\110\x97\x98\x108\x101\x32\66\x111\x120\x101\x115" or "\226\152\149\32\69\110\x97\x98\x108\x101\x32\66\x111\x120\x101\x115"
+    _0xi1j2()
+end)
+
+_0xa9b0.MouseButton1Click:Connect(function()
+    _0xl5m6()
+    _0xk3l4 = not _0xk3l4
+    _0xa9b0.Text = _0xk3l4 and "\226\152\145\32\69\110\x97\x98\x108\x101\x32\84\x114\x97\x99\x101\x114\x115" or "\226\152\149\32\69\110\x97\x98\x108\x101\x32\84\x114\x97\x99\x101\x114\x115"
+    _0xt3u4()
+end)
+
+_0xc1d2.MouseButton1Click:Connect(function()
+    _0xl5m6()
+    _0xg9h0 = false
+    _0xi1j2 = false
+    _0xk3l4 = false
+    _0xv5w6.Text = "\69\83\80\32\69\110\x97\x98\x108\x101"
+    _0xy7z8.Text = "\226\152\149\x32\69\110\x97\x98\x108\x101\x32\66\x111\x120\x101\x115"
+    _0xa9b0.Text = "\226\152\149\x32\69\110\x97\x98\x108\x101\x32\84\x114\x97\x99\x101\x114\x115"
+    _0xe7f8()
+    _0xi1j2()
+    _0xt3u4()
+end)
+
+_0xg5h6.MouseButton1Click:Connect(function()
+    _0xl5m6()
+    _0xm1n2()
+end)
+
+_0x3c4d:Create(_0xp9q0, TweenInfo.new(0.5), {
+    Position = UDim2.new(0.5, -300, 0.5, -200)
+}):Play()
+_0xn7o8.Visible = false
+_0xv5w6.Visible = true
+_0xy7z8.Visible = true
+
+local function _0xa9b0()
+    _0xl5m6()
+    _0x3c4d:Create(_0xp9q0, TweenInfo.new(0.5), {
+        Position = UDim2.new(0.5, -300, 1, 0)
+    }):Play()
+    wait(0.5)
+    _0xp9q0.Visible = false
+    _0xn7o8.Visible = true
+    _0xv5w6.Visible = false
+    _0xy7z8.Visible = false
+end
+
+_0xn7o8.MouseButton1Click:Connect(function()
+    _0xl5m6()
+    _0xp9q0.Position = UDim2.new(0.5, -300, 1, 0)
+    _0xp9q0.Visible = true
+    _0x3c4d:Create(_0xp9q0, TweenInfo.new(0.5), {
+        Position = UDim2.new(0.5, -300, 0.5, -200)
+    }):Play()
+    _0xn7o8.Visible = false
+    _0xv5w6.Visible = true
+    _0xy7z8.Visible = true
+end)
+
+_0xv5w6.MouseButton1Click:Connect(_0xa9b0)
+_0xy7z8.MouseButton1Click:Connect(_0xa9b0)
+
+_0xh1i2.AncestryChanged:Connect(function()
+    if not _0xh1i2:IsDescendantOf(game) then
+        for _0xc1d2, _0xe3f4 in pairs(_0xy3z4) do
+            _0xa3b4(_0xc1d2)
+        end
+        for _0xg5h6, _0xi7j8 in pairs(_0xa5b6) do
+            _0xe7f8(_0xg5h6)
+        end
+        for _0xk9l0, _0xm1n2 in pairs(_0xc7d8) do
+            _0xp9q0(_0xk9l0)
+        end
+        _0xg1h2:Remove()
+        if _0xc1d2 then
+            _0xc1d2:Destroy()
+            _0xc1d2 = nil
+        end
+    end
+end)
+
+local _0xr5s6 = {
+    {ping = 0, predX = 0.12345678, predY = 0.13456789},
+    {ping = 10, predX = 0.12543210, predY = 0.13654321},
+    {ping = 20, predX = 0.12678901, predY = 0.13789012},
+    {ping = 30, predX = 0.12865432, predY = 0.13923456},
+    {ping = 40, predX = 0.13012345, predY = 0.14067890},
+    {ping = 50, predX = 0.13245678, predY = 0.14212345},
+    {ping = 60, predX = 0.13398765, predY = 0.14345678},
+    {ping = 70, predX = 0.13543210, predY = 0.14456789},
+    {ping = 80, predX = 0.13698765, predY = 0.14523456},
+    {ping = 90, predX = 0.13812345, predY = 0.14612345},
+    {ping = 100, predX = 0.13923456, predY = 0.14745678},
+    {ping = 110, predX = 0.14067890, predY = 0.14898765},
+    {ping = 120, predX = 0.14212345, predY = 0.15012345},
+    {ping = 130, predX = 0.14345678, predY = 0.15123456},
+    {ping = 140, predX = 0.14456789, predY = 0.15212345},
+    {ping = 150, predX = 0.14523456, predY = 0.15398765},
+    {ping = 160, predX = 0.14612345, predY = 0.15456789},
+    {ping = 170, predX = 0.14745678, predY = 0.15523456},
+    {ping = 180, predX = 0.14898765, predY = 0.15678901},
+    {ping = 190, predX = 0.15012345, predY = 0.15743210},
+    {ping = 200, predX = 0.15123456, predY = 0.15865432},
+    {ping = 210, predX = 0.15212345, predY = 0.15998765},
+    {ping = 220, predX = 0.15398765, predY = 0.16123456},
+    {ping = 230, predX = 0.15456789, predY = 0.16212345},
+    {ping = 240, predX = 0.15523456, predY = 0.16345678},
+    {ping = 250, predX = 0.15678901, predY = 0.16456789}
+}
+
+local function _0xt7u8(_0xv9w0, _0xy1z2, _0xa3b4)
+    local _0xc5d6 = "\80\x105\x110\x103\x95" .. _0xv9w0
+    local _0xe7f8 = {
+        fovRadius = 150, smoothness = 0.1, predX = _0xy1z2, predY = _0xa3b4,
+        cframeSpeed = 5, selectedHitPart = "\72\x101\x97\x100", camlockActive = true,
+        fovEnabled = true, espEnabled = false, boxesEnabled = false,
+        tracersEnabled = false, cframeEnabled = false
+    }
+    local _0xg9h0 = _0x9i0j:JSONEncode(_0xe7f8)
+    local _0xi1j2 = Instance.new("\83\x116\x114\x105\x110\x103\x86\x97\x108\x117\x101", _0xm3n4)
+    _0xi1j2.Name = _0xc5d6
+    _0xi1j2.Value = _0xg9h0
+end
+
+for _, _0xk3l4 in ipairs(_0xr5s6) do
+    _0xt7u8(_0xk3l4.ping, _0xk3l4.predX, _0xk3l4.predY)
+end
+
+_0xi3j4()
